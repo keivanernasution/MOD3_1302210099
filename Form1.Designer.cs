@@ -40,8 +40,9 @@
             button10 = new Button();
             button11 = new Button();
             button12 = new Button();
-            label1 = new Label();
             label2 = new Label();
+            textBox1 = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -56,7 +57,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(419, 198);
+            button2.Location = new Point(429, 198);
             button2.Name = "button2";
             button2.Size = new Size(47, 28);
             button2.TabIndex = 1;
@@ -66,25 +67,27 @@
             // 
             // button3
             // 
-            button3.Location = new Point(461, 198);
+            button3.Location = new Point(482, 198);
             button3.Name = "button3";
             button3.Size = new Size(47, 28);
             button3.TabIndex = 2;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(376, 222);
+            button4.Location = new Point(376, 232);
             button4.Name = "button4";
             button4.Size = new Size(47, 28);
             button4.TabIndex = 3;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(419, 222);
+            button5.Location = new Point(429, 232);
             button5.Name = "button5";
             button5.Size = new Size(47, 28);
             button5.TabIndex = 4;
@@ -94,16 +97,17 @@
             // 
             // button6
             // 
-            button6.Location = new Point(461, 222);
+            button6.Location = new Point(482, 232);
             button6.Name = "button6";
             button6.Size = new Size(47, 28);
             button6.TabIndex = 5;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
-            button7.Location = new Point(376, 247);
+            button7.Location = new Point(376, 266);
             button7.Name = "button7";
             button7.Size = new Size(47, 28);
             button7.TabIndex = 6;
@@ -113,7 +117,7 @@
             // 
             // button8
             // 
-            button8.Location = new Point(419, 247);
+            button8.Location = new Point(429, 266);
             button8.Name = "button8";
             button8.Size = new Size(47, 28);
             button8.TabIndex = 7;
@@ -123,16 +127,17 @@
             // 
             // button9
             // 
-            button9.Location = new Point(461, 247);
+            button9.Location = new Point(482, 266);
             button9.Name = "button9";
             button9.Size = new Size(47, 28);
             button9.TabIndex = 8;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
-            button10.Location = new Point(461, 272);
+            button10.Location = new Point(482, 300);
             button10.Name = "button10";
             button10.Size = new Size(47, 28);
             button10.TabIndex = 9;
@@ -142,16 +147,17 @@
             // 
             // button11
             // 
-            button11.Location = new Point(376, 272);
+            button11.Location = new Point(376, 300);
             button11.Name = "button11";
             button11.Size = new Size(47, 28);
             button11.TabIndex = 10;
             button11.Text = "+";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // button12
             // 
-            button12.Location = new Point(419, 272);
+            button12.Location = new Point(429, 300);
             button12.Name = "button12";
             button12.Size = new Size(47, 28);
             button12.TabIndex = 11;
@@ -159,31 +165,38 @@
             button12.UseVisualStyleBackColor = true;
             button12.Click += button12_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(403, 171);
-            label1.Name = "label1";
-            label1.Size = new Size(76, 15);
-            label1.TabIndex = 12;
-            label1.Text = "Label Output";
-            label1.Click += label1_Click;
-            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(491, 150);
+            label2.Location = new Point(315, 159);
             label2.Name = "label2";
             label2.Size = new Size(0, 15);
             label2.TabIndex = 13;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(376, 151);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(153, 23);
+            textBox1.TabIndex = 14;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(385, 154);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 15);
+            label1.TabIndex = 15;
+            label1.Click += label1_Click_1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 530);
-            Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(textBox1);
+            Controls.Add(label2);
             Controls.Add(button12);
             Controls.Add(button11);
             Controls.Add(button10);
@@ -217,7 +230,8 @@
         private Button button10;
         private Button button11;
         private Button button12;
-        private Label label1;
         private Label label2;
+        private TextBox textBox1;
+        private Label label1;
     }
 }
