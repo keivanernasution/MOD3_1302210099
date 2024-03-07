@@ -40,7 +40,8 @@
             button10 = new Button();
             button11 = new Button();
             button12 = new Button();
-            button13 = new Button();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -158,22 +159,31 @@
             button12.UseVisualStyleBackColor = true;
             button12.Click += button12_Click;
             // 
-            // button13
+            // label1
             // 
-            button13.Location = new Point(376, 144);
-            button13.Name = "button13";
-            button13.Size = new Size(132, 28);
-            button13.TabIndex = 12;
-            button13.Text = "Label Output";
-            button13.UseVisualStyleBackColor = true;
-            button13.Click += button13_Click;
+            label1.AutoSize = true;
+            label1.Location = new Point(403, 171);
+            label1.Name = "label1";
+            label1.Size = new Size(76, 15);
+            label1.TabIndex = 12;
+            label1.Text = "Label Output";
+            label1.Click += label1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(491, 150);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 15);
+            label2.TabIndex = 13;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 530);
-            Controls.Add(button13);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(button12);
             Controls.Add(button11);
             Controls.Add(button10);
@@ -190,6 +200,7 @@
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -206,6 +217,7 @@
         private Button button10;
         private Button button11;
         private Button button12;
-        private Button button13;
+        private Label label1;
+        private Label label2;
     }
 }

@@ -51,5 +51,10 @@ namespace MOD3_1302210099
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
